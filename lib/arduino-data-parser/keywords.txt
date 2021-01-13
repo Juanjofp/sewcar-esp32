@@ -1,0 +1,53 @@
+#######################################
+# Syntax Coloring Map For ExampleLibrary
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+FRAME	KEYWORD1
+SewParser	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+decodeFrame	KEYWORD2
+decodeFrameWithCallback	KEYWORD2
+getFrame	KEYWORD2
+
+encodeTemperature	KEYWORD2
+encodeGPS	KEYWORD2
+encodeHumidity	KEYWORD2
+encodeDistance	KEYWORD2
+encodeDCMotor	KEYWORD2
+encodeSwitch	KEYWORD2
+encodeToggle	KEYWORD2
+
+encodeCMDTemperature	KEYWORD2
+encodeCMDGPS	KEYWORD2
+encodeCMDHumidity	KEYWORD2
+encodeCMDDistance	KEYWORD2
+encodeCMDDCMotor	KEYWORD2
+encodeCMDSwitch	KEYWORD2
+encodeCMDToggle	KEYWORD2
+
+getGPSPayload	KEYWORD2
+getDCMotorPayload	KEYWORD2
+getSwitchPayload	KEYWORD2
+getTogglePayload	KEYWORD2
+getSingleFloatPayload	KEYWORD2
+getSingleUInt16Payload	KEYWORD2
+getSingleUInt8Payload	KEYWORD2
+getTemperaturePayload	KEYWORD2
+getHumidityPayload	KEYWORD2
+getDistancePayload	KEYWORD2
+
+#######################################
+# Instances (KEYWORD2)
+#######################################
+
+#######################################
+# Constants (LITERAL1)
+#######################################
