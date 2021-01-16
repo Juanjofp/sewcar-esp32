@@ -92,6 +92,7 @@ int handleFrames(FRAME frame, int status) {
             rightMotor.runMotor(data[0], data[1], data[2]);
         }
     }
+    sewMQTT.publish(0, frame.frame, frame.size);
     return 0;
 }
 
@@ -116,7 +117,7 @@ void onSensorRequest(WebServer& ws) {
     response += "{\"type\": \"DCMOTOR\", \"sensorId\": \"" + MAC + ":00:02\"},";
     response += "{\"type\": \"DISTANCE\", \"sensorId\": \"" + MAC + ":00:03\"},";
     response += "{\"type\": \"DISTANCE\", \"sensorId\": \"" + MAC + ":00:04\"},";
-    response += "{\"type\": \"TOGGLE\", \"sensorId\": \"" + MAC + ":00:05\"},";
+    response += "{\"type\": \"TOGGLE\", \"sensorId\": \"" + MAC + ":00:05\"}";
     response += "]}";
     ws.send(200, "application/json", response);
 }
